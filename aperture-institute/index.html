@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="APERTURE Institute offers live online classes and self-paced courses in English, examination preparation, professional communication, and educator development.">
+  <meta name="theme-color" content="#172D49">
+  <title>APERTURE Institute | Open up to what's possible</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#172D49;--violet:#6C63FF;--lime:#C8F169;--ivory:#F5F3EE;--ink:#172D49;--muted:#687487;--white:#fff;--line:rgba(23,45,73,.13);--radius:24px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ivory);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1180px,calc(100% - 48px));margin:auto}
+    .topbar{position:sticky;top:0;z-index:20;background:rgba(245,243,238,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    .nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:11px;font:800 22px "Manrope",sans-serif;letter-spacing:-1.2px}.brand-mark{width:34px;height:34px;border:2px solid var(--violet);border-radius:50%;display:grid;place-items:center;position:relative}.brand-mark:before{content:"";width:13px;height:13px;border:2px solid var(--violet);border-radius:50%;transform:translate(5px,-4px)}.brand small{display:block;font:700 9px "Space Grotesk",sans-serif;letter-spacing:3.3px;margin-top:-4px;color:#687487}.navlinks{display:flex;align-items:center;gap:29px;font-size:13px;font-weight:700}.navlinks a:not(.nav-cta):hover{color:var(--violet)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:13px 21px;background:var(--navy);color:white;font-weight:700;font-size:13px;transition:.2s}.nav-cta:hover,.btn:hover{background:var(--violet);transform:translateY(-2px)}.menu{display:none;border:0;background:none;font-size:25px;color:var(--navy)}
+    .hero{background:var(--navy);color:white;overflow:hidden;position:relative}.hero:after{content:"";position:absolute;width:540px;height:540px;border:1px solid rgba(255,255,255,.13);border-radius:50%;right:-140px;top:-210px;box-shadow:0 0 0 42px rgba(255,255,255,.025),0 0 0 84px rgba(255,255,255,.025),0 0 0 126px rgba(255,255,255,.025)}.hero-inner{min-height:590px;display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:45px;padding:82px 0;position:relative;z-index:1}.eyebrow{font:700 11px "Space Grotesk",sans-serif;letter-spacing:2.6px;text-transform:uppercase;color:var(--lime)}h1,h2,h3{font-family:"Manrope",sans-serif;line-height:1.08;letter-spacing:-1.8px;margin:0}h1{font-size:clamp(48px,6.2vw,78px);max-width:700px;margin:20px 0 22px}h1 em{font-style:normal;color:var(--lime)}.hero-copy{max-width:510px;color:rgba(255,255,255,.76);font-size:17px;margin:0 0 30px}.hero-actions{display:flex;gap:13px;align-items:center;flex-wrap:wrap}.btn-lime{background:var(--lime);color:var(--navy)}.btn-lime:hover{background:white}.text-link{font-size:13px;font-weight:700;padding:12px 8px}.text-link span{color:var(--lime);margin-left:6px}.hero-art{height:390px;position:relative;display:grid;place-items:center}.orb{width:300px;height:300px;border:1px solid rgba(255,255,255,.35);border-radius:50%;position:absolute}.orb:before,.orb:after{content:"";position:absolute;border:1px solid rgba(255,255,255,.25);border-radius:50%;inset:28px}.orb:after{inset:58px}.aperture-core{width:170px;height:170px;border-radius:50%;background:var(--violet);position:relative;box-shadow:0 0 80px rgba(108,99,255,.35);display:grid;place-items:center}.aperture-core:before{content:"";width:75px;height:75px;border:12px solid var(--lime);border-radius:50%;border-left-color:transparent;transform:rotate(-35deg)}.float-note{position:absolute;right:0;bottom:40px;background:var(--lime);color:var(--navy);padding:17px 20px;border-radius:16px;font:700 12px "Space Grotesk",sans-serif;transform:rotate(4deg);box-shadow:0 12px 30px #0c1a2b55}.float-note strong{display:block;font:800 23px "Manrope",sans-serif}
+    .trust{padding:26px 0;border-bottom:1px solid var(--line)}.trust-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.trust-label{font-size:11px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:var(--muted)}.trust-items{display:flex;gap:34px;flex-wrap:wrap;color:#40516a;font:700 13px "Space Grotesk",sans-serif}
+    section{padding:104px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:35px;margin-bottom:42px}.section-head h2{font-size:clamp(34px,4vw,49px);max-width:570px}.section-head p{max-width:390px;color:var(--muted);margin:0}.kicker{color:var(--violet);font:700 11px "Space Grotesk",sans-serif;letter-spacing:2.2px;text-transform:uppercase;margin-bottom:15px}.program-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.program-card{min-height:280px;background:white;border:1px solid var(--line);border-radius:20px;padding:25px;display:flex;flex-direction:column;transition:.25s}.program-card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(23,45,73,.09)}.card-icon{width:45px;height:45px;border-radius:14px;background:#efedff;color:var(--violet);display:grid;place-items:center;font-size:21px;margin-bottom:26px}.program-card:nth-child(2) .card-icon{background:#eff8d9;color:#526d1e}.program-card:nth-child(3) .card-icon{background:#e9f1fa;color:#315c8b}.program-card:nth-child(4) .card-icon{background:#fcebe5;color:#a64b37}.program-card h3{font-size:20px;letter-spacing:-.6px;margin-bottom:12px}.program-card p{color:var(--muted);font-size:13px;margin:0 0 22px}.card-link{margin-top:auto;font-size:12px;font-weight:800;color:var(--violet)}
+    .about{background:#eae9e3}.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:90px;align-items:center}.about-visual{min-height:390px;background:var(--violet);border-radius:28px;position:relative;overflow:hidden;display:grid;place-items:center}.about-visual:before,.about-visual:after{content:"";position:absolute;border:1px solid rgba(255,255,255,.35);border-radius:50%;width:340px;height:340px}.about-visual:after{width:250px;height:250px}.visual-shape{width:130px;height:130px;background:var(--lime);border-radius:50%;z-index:1;box-shadow:0 0 0 24px rgba(255,255,255,.12)}.about-copy h2{font-size:clamp(36px,4vw,52px);margin-bottom:23px}.about-copy p{color:#58677a}.values{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}.value{border-top:1px solid rgba(23,45,73,.2);padding-top:12px;font-size:13px;font-weight:700}.value span{display:block;color:var(--muted);font-weight:400;margin-top:4px}
+    .learning{background:var(--navy);color:white}.learning .section-head p{color:rgba(255,255,255,.68)}.learning .kicker{color:var(--lime)}.learning-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.learning-card{padding:34px;border:1px solid rgba(255,255,255,.17);border-radius:22px;background:rgba(255,255,255,.045)}.learning-card .number{font:700 12px "Space Grotesk",sans-serif;color:var(--lime);letter-spacing:1.5px}.learning-card h3{font-size:27px;margin:17px 0 12px}.learning-card p{color:rgba(255,255,255,.7);margin:0 0 20px}.learning-card a{color:var(--lime);font-size:13px;font-weight:700}
+    .cta{padding:85px 0}.cta-panel{background:var(--lime);border-radius:28px;padding:55px 60px;display:flex;justify-content:space-between;align-items:center;gap:30px}.cta-panel h2{font-size:clamp(32px,4vw,47px);max-width:590px}.cta-panel p{margin:13px 0 0;color:#43552a}.cta-panel .btn{background:var(--navy);white-space:nowrap}
+    footer{background:#101f33;color:white;padding:55px 0 25px}.footer-top{display:flex;justify-content:space-between;gap:40px;padding-bottom:42px}.footer-brand p{color:rgba(255,255,255,.6);font-size:13px;max-width:300px}.footer-links{display:flex;gap:60px}.footer-col strong{display:block;font:700 11px "Space Grotesk",sans-serif;letter-spacing:1.6px;text-transform:uppercase;color:var(--lime);margin-bottom:15px}.footer-col a,.footer-col span{display:block;color:rgba(255,255,255,.72);font-size:13px;margin:8px 0}.footer-bottom{border-top:1px solid rgba(255,255,255,.15);padding-top:20px;color:rgba(255,255,255,.48);font-size:11px;display:flex;justify-content:space-between;gap:15px}
+    @media(max-width:900px){.navlinks{gap:16px}.hero-inner{grid-template-columns:1fr .7fr}.hero-art{transform:scale(.8)}.program-grid{grid-template-columns:repeat(2,1fr)}.about-grid{gap:40px}}
+    @media(max-width:680px){.wrap{width:min(100% - 34px,560px)}.nav{height:70px}.menu{display:block}.navlinks{display:none;position:absolute;top:70px;left:0;right:0;background:var(--ivory);padding:20px 24px 25px;flex-direction:column;align-items:stretch;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.nav-cta{text-align:center}.hero-inner{display:block;padding:70px 0 40px;min-height:0}.hero-art{height:260px;transform:scale(.72);margin-top:12px}.hero:after{right:-300px}.hero-copy{font-size:15px}.trust-inner{display:block}.trust-items{gap:15px;margin-top:15px}.trust-items span{font-size:11px}section{padding:72px 0}.section-head{display:block}.section-head p{margin-top:17px}.program-grid{grid-template-columns:1fr}.program-card{min-height:230px}.about-grid,.learning-grid{grid-template-columns:1fr}.about-visual{min-height:280px;order:2}.about-copy{order:1}.values{gap:12px}.learning-card{padding:26px}.cta{padding:60px 0}.cta-panel{padding:35px 27px;display:block}.cta-panel .btn{margin-top:25px}.footer-top{display:block}.footer-links{margin-top:30px;gap:35px;flex-wrap:wrap}.footer-bottom{display:block}.footer-bottom span{display:block;margin-top:8px}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="index.html" aria-label="APERTURE Institute home"><span class="brand-mark"></span><span>APERTURE<small>INSTITUTE</small></span></a>
+      <button class="menu" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleMenu()">☰</button>
+      <nav class="navlinks" id="navlinks">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="programs.html">Programs</a><a href="learning-experience.html">Learning Experience</a><a href="faqs.html">FAQs</a><a class="nav-cta" href="contact.html">Make an inquiry ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <div>
+          <div class="eyebrow">A new perspective on learning</div>
+          <h1>Open up to<br><em>what’s possible.</em></h1>
+          <p class="hero-copy">Build the language, knowledge, and confidence to move forward. Learn with APERTURE through expert-led live classes and flexible self-paced courses.</p>
+          <div class="hero-actions"><a class="btn btn-lime" href="programs.html">Explore our programs ↗</a><a class="text-link" href="about.html">Discover APERTURE <span>→</span></a></div>
+        </div>
+        <div class="hero-art" aria-hidden="true"><div class="orb"></div><div class="aperture-core"></div><div class="float-note"><strong>Learn beyond</strong>your current horizon.</div></div>
+      </div>
+    </section>
+
+    <div class="trust"><div class="wrap trust-inner"><div class="trust-label">Learning designed for your next step</div><div class="trust-items"><span>LOCAL & INTERNATIONAL</span><span>LIVE ONLINE CLASSES</span><span>SELF-PACED LEARNING</span></div></div></div>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head"><div><div class="kicker">What you can learn</div><h2>Find the direction.<br>Build the capability.</h2></div><p>Whether you are strengthening your English, preparing for an examination, advancing at work, or developing as an educator, there is room to grow here.</p></div>
+        <div class="program-grid">
+          <article class="program-card"><div class="card-icon">Aa</div><h3>APERTURE English</h3><p>Develop practical English skills for everyday communication, academic success, and confident self-expression.</p><a class="card-link" href="programs/english.html">Explore English →</a></article>
+          <article class="program-card"><div class="card-icon">◎</div><h3>Examination Preparation</h3><p>Prepare strategically for IELTS, TOEFL, and other English proficiency examinations.</p><a class="card-link" href="programs/examination-preparation.html">Explore exam prep →</a></article>
+          <article class="program-card"><div class="card-icon">↗</div><h3>APERTURE Professional</h3><p>Communicate with clarity and confidence in the workplace and across professional settings.</p><a class="card-link" href="programs/professional.html">Explore professional English →</a></article>
+          <article class="program-card"><div class="card-icon">✳</div><h3>Educator Development</h3><p>Strengthen teaching practice through methodology, language awareness, and professional development.</p><a class="card-link" href="programs/educator-development.html">Explore educator development →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="wrap about-grid">
+        <div class="about-visual" aria-hidden="true"><div class="visual-shape"></div></div>
+        <div class="about-copy"><div class="kicker">The APERTURE perspective</div><h2>Learning should open doors—not add barriers.</h2><p>We believe meaningful education gives people more than information. It gives them the ability to think clearly, communicate effectively, and take on new opportunities with confidence.</p><p>APERTURE brings together purposeful instruction, relevant learning experiences, and flexible ways to study—so progress can fit real lives and ambitions.</p><div class="values"><div class="value">Purposeful learning<span>Clear goals. Practical outcomes.</span></div><div class="value">Human connection<span>Support that makes learning matter.</span></div><div class="value">Continuous growth<span>Progress at every stage.</span></div><div class="value">Wider perspectives<span>Learning without borders.</span></div></div><p><a class="card-link" href="about.html">Get to know us →</a></p></div>
+      </div>
+    </section>
+
+    <section class="learning">
+      <div class="wrap">
+        <div class="section-head"><div><div class="kicker">A way of learning that works for you</div><h2>Expert guidance.<br>Your pace. Your progress.</h2></div><p>Choose the learning arrangement that fits your goals, schedule, and preferred way of learning. You can explore live instruction or study independently with structured courses.</p></div>
+        <div class="learning-grid">
+          <article class="learning-card"><div class="number">01 / LIVE LEARNING</div><h3>Learn with a real instructor.</h3><p>Join guided online classes, engage in discussion, receive feedback, and work toward your goals with expert support.</p><a href="learning-experience.html">Discover live classes →</a></article>
+          <article class="learning-card"><div class="number">02 / SELF-PACED LEARNING</div><h3>Make learning fit your life.</h3><p>Access structured learning materials and work through lessons at a pace that suits your schedule.</p><a href="learning-experience.html">Discover self-paced courses →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta"><div class="wrap"><div class="cta-panel"><div><div class="kicker">Your next chapter starts here</div><h2>Ready to see where learning can take you?</h2><p>Tell us what you want to achieve. We’ll help you find a suitable learning path.</p></div><a class="btn" href="contact.html">Start an inquiry ↗</a></div></div></section>
+  </main>
+
+  <footer><div class="wrap"><div class="footer-top"><div class="footer-brand"><a class="brand" href="index.html"><span class="brand-mark"></span><span>APERTURE<small>INSTITUTE</small></span></a><p>Expanding knowledge. Empowering people. Online learning for a world of possibilities.</p></div><div class="footer-links"><div class="footer-col"><strong>Explore</strong><a href="about.html">About us</a><a href="programs.html">Programs</a><a href="learning-experience.html">Learning experience</a></div><div class="footer-col"><strong>Connect</strong><a href="faqs.html">FAQs</a><a href="contact.html">Contact & inquiries</a><span>Online institution</span></div></div></div><div class="footer-bottom"><span>© <span id="year"></span> APERTURE Institute. All rights reserved.</span><span>Expanding knowledge. Empowering people.</span></div></div></footer>
+  <script>
+    function toggleMenu(){const nav=document.getElementById('navlinks');const btn=document.querySelector('.menu');const open=nav.classList.toggle('open');btn.setAttribute('aria-expanded',String(open));}
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>

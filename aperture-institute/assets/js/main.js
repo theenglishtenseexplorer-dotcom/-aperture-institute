@@ -1,0 +1,3 @@
+function toggleMenu(){const nav=document.querySelector('.links');const button=document.querySelector('.menu');if(!nav||!button)return;const opened=nav.classList.toggle('open');button.setAttribute('aria-expanded',String(opened));}
+document.querySelectorAll('form[data-demo-form]').forEach(form=>form.addEventListener('submit',event=>{event.preventDefault();const message=form.querySelector('.form-message');if(message)message.textContent='Thank you for your inquiry. (Design preview: connect a form handler before launch to receive submissions.)';}));
+document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
